@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
@@ -8,35 +8,87 @@ header {
     background-color: #fff;
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-.barra{
+.navbar {
     display: flex;
+    align-items: center;
+    padding: 10px;
     justify-content: space-between;
+}
+
+/* Ajustes para el logo */
+#logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Contenedor principal para logo y búsqueda */
+.navbar-brand {
+    display: flex;
     align-items: center;
 }
 
-#logo {
-    width: 25%;
-    height: 25%;
+/* Estilos para el contenedor de búsqueda */
+.contenido-buscador {
+    display: flex; 
+    align-items: center;
+    cursor: pointer;
+    position: relative;
 }
 
-.nav-links {
+#icono-busqueda {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+/* Estilos para el input de búsqueda */
+#buscador {
+    display: none;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+    margin-left: 5px;
+}
+
+#inputaso {
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    width: 150px;
+    outline: none;
+}
+
+/* Estilos para el título */
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Estilos para los enlaces de navegación */
+.navbar-nav {
     display: flex;
-    gap: 20px;
+    align-items: center;
 }
 
-.mover1{
-    margin-left: 5em;
+.nav-item {
+    margin-left: 10px;
 }
 
-.nav-links li {
-    list-style: none;
-}
-
-.nav-links li a {
+.nav-link {
     text-decoration: none;
     color: #333;
     font-size: 16px;
 }
 
+/* Espacio reservado para el buscador */
+.navbar-brand {
+    width: 200px;
+}

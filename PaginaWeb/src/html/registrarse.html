@@ -55,14 +55,21 @@
             <h2 class="mb-4">Bienvenido a Atlas Perfume</h2>
 
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Nombre de usuario" required>
-            </div>
-            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nombre" required>
+                <input type="number" class="form-control" placeholder="Edad" required>
+                Genero: <select required>
+                            <option value="">Selecciona tu sexo</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                        </select>
+                <input type="email" class="form-control" placeholder="Correo electrónico" required>
                 <input type="password" class="form-control" placeholder="Contraseña" required>
+                <input type="password" class="form-control" placeholder="Confirmar contraseña" required>
+                He leído y acepto la Política de Privacidad <input type="checkbox" required>
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+            <button type="submit" class="btn btn-primary btn-block">Registrate</button>
             <div class="register-link mt-3 text-center">
-                <p>¿No te has registrado? <a href="../html/registrarse.html">Regístrate aquí</a></p>
+                <p>¿Ya tienes cuenta? <a href="../html/iniciarsesion.html">Iniciar sesión aquí</a></p>
             </div>
         </form>
     </div>

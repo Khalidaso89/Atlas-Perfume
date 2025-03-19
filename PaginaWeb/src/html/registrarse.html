@@ -55,17 +55,18 @@
             <h2 class="mb-4">Bienvenido a Atlas Perfume</h2>
 
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Nombre" required>
-                <input type="number" class="form-control" placeholder="Edad" required>
-                Genero: <select required>
+                <br><strong>Nombre: </strong><input type="text" class="form-control" placeholder="Nombre" pattern="\w{3,16}" required>
+                <br><strong>Edad: </strong><input type="number" class="form-control" placeholder="Edad" required>
+                <br><strong>Genero: </strong>
+                <br><select required>
                             <option value="">Selecciona tu sexo</option>
                             <option value="masculino">Masculino</option>
                             <option value="femenino">Femenino</option>
                         </select>
-                <input type="email" class="form-control" placeholder="Correo electrónico" required>
-                <input type="password" class="form-control" placeholder="Contraseña" required>
+                <br><br><strong>Email: </strong><input type="email" class="form-control" placeholder="Correo electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <br><strong>Contraseña(máx 8 digitos):</strong><input type="password" class="form-control" placeholder="Contraseña" pattern="\d{8,8}" required>
                 <input type="password" class="form-control" placeholder="Confirmar contraseña" required>
-                He leído y acepto la Política de Privacidad <input type="checkbox" required>
+                <br> He leído y acepto la Política de Privacidad <input type="checkbox" required>
             </div>
             <button type="submit" class="btn btn-primary btn-block">Registrate</button>
             <div class="register-link mt-3 text-center">

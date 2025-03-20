@@ -147,3 +147,71 @@ footer {
     box-shadow: 0 0 0 rgba(0,0,0,0.1);
     margin: 0 auto; 
 }
+
+
+
+
+/* Hero Section */
+.hero-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.perfume-image {
+    width: 100%;
+    max-width: 400px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+}
+
+.hero-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Sección de Productos */
+.products-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.product-card {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    max-width: 150px;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.new-price {
+    color: red;
+}
+
+
+/* Botones de Países */
+#country-buttons-section {
+    margin-top: 30px;
+}
+
+.btn-country {
+    margin: 10px;
+}
+

@@ -51,9 +51,29 @@
     </header>
 
     <br>
-    <section class="container">
-        <h1>MI CESTA</h1>
-    </section>
+    <main class="container mt-5">
+        <h1 class="text-center mb-4">Carrito de Compras</h1>
+        <h2 class="text-center text-secondary">Revisa tus productos antes de pagar</h2>
+        
+        <!-- Lista de productos -->
+        <div class="card p-3 mb-4 shadow-sm">
+            <h5 class="mb-3 font-weight-bold">Productos en tu carrito</h5>
+            <div id="lista-productos" class="list-group">
+                <!-- Producto de ejemplo -->
+                <div class="list-group-item d-flex justify-content-between align-items-center border-bottom py-3">
+                    <span class="font-weight-bold">Perfume de muestra</span>
+                    <span class="text-primary">29.99 euros</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Total y finalizar compra -->
+        <div class="card p-4 text-center shadow-sm">
+            <h5 class="mb-3 font-weight-bold">Total de la compra:</h5>
+            <p id="total-precio" class="font-weight-bold text-danger">0.00 euros</p>
+            <button id="finalizar-compra" class="btn btn-success btn-lg">Finalizar Compra</button>
+        </div>
+    </main>
 
     <br><br><br><br><br><br>
     <footer>
@@ -109,6 +129,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    
+    <script src="#"></script>
 </body>
 
 </html>

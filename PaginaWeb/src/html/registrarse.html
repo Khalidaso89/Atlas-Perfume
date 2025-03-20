@@ -48,32 +48,50 @@
 
         </nav>
     </header>
+    
+    
+    <main>
+        <div class="form-container">
+            <form class="login-form" id="registro-form">
+                <h2 class="mb-4">Bienvenido a Atlas Perfume</h2>
+        
+                <div class="form-group">
+                    <label><strong>Nombre:</strong></label>
+                    <input type="text" class="form-control" placeholder="Nombre" pattern="\w{3,16}" required>
+        
+                    <label><strong>Edad:</strong></label>
+                    <input type="number" class="form-control" id="edad" placeholder="Edad" min="18" required>
+        
+                    <label><strong>Género:</strong></label>
+                    <select class="form-control" required>
+                        <option value="">Selecciona tu sexo</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                    </select>
+        
+                    <label><strong>Email:</strong></label>
+                    <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+        
+                    <label><strong>Contraseña (8 dígitos numéricos):</strong></label>
+                    <input type="password" class="form-control" id="password" placeholder="Contraseña" pattern="\d{8,8}" required>
+        
+                    <label><strong>Confirmar Contraseña:</strong></label>
+                    <input type="password" class="form-control" id="confirm-password" placeholder="Confirmar contraseña" required>
+        
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">He leído y acepto la <a href="#">Política de Privacidad</a></label>
+                    </div>
+                </div>
+                <button class="btn btn-custom" type="submit" data-hover="Atlas Perfume!"><div>Registrate!</div></button>
+        
+                <div class="register-link mt-3 text-center">
+                    <p>¿Ya tienes cuenta? <a href="../html/iniciarsesion.html">Iniciar sesión aquí</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
 
-    <br>
-    <div class="form-container">
-        <form class="login-form">
-            <h2 class="mb-4">Bienvenido a Atlas Perfume</h2>
-
-            <div class="form-group">
-                <br><strong>Nombre: </strong><input type="text" class="form-control" placeholder="Nombre" pattern="\w{3,16}" required>
-                <br><strong>Edad: </strong><input type="number" class="form-control" placeholder="Edad" required>
-                <br><strong>Genero: </strong>
-                <br><select required>
-                            <option value="">Selecciona tu sexo</option>
-                            <option value="masculino">Masculino</option>
-                            <option value="femenino">Femenino</option>
-                        </select>
-                <br><br><strong>Email: </strong><input type="email" class="form-control" placeholder="Correo electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                <br><strong>Contraseña(máx 8 digitos):</strong><input type="password" class="form-control" placeholder="Contraseña" pattern="\d{8,8}" required>
-                <input type="password" class="form-control" placeholder="Confirmar contraseña" required>
-                <br> He leído y acepto la Política de Privacidad <input type="checkbox" required>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Registrate</button>
-            <div class="register-link mt-3 text-center">
-                <p>¿Ya tienes cuenta? <a href="../html/iniciarsesion.html">Iniciar sesión aquí</a></p>
-            </div>
-        </form>
-    </div>
 
     <br><br><br><br>
     <footer>
@@ -129,6 +147,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    
+    <script src="../js/form.js"></script>
 </body>
 
 </html>

@@ -58,19 +58,19 @@
 
 
     <br><br>
-    <main class="container hero-section">
+    <main class="container perfume-section">
         <!-- Hero Section: Perfume Principal -->
         <div class="row">
             <div class="col-md-6 text-center">
                 <img src="../assets/img/perfume-main.jpg" alt="Perfume Principal" class="perfume-image">
             </div>
             <div class="col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start">
-                <h2 class="hero-title">Descubre tu Fragancia Única</h2>
-                <p class="hero-subtitle">La esencia que te define</p>
-                <button class="btn btn-primary hero-button">Ver Colección</button>
+                <h2 class="perfume-title">Descubre tu Fragancia Única</h2>
+                <p class="perfume-subtitle">La esencia que te define</p>
+                <button class="btn btn-primary perfume-button">Ver Colección</button>
             </div>
         </div>
-    
+
         <!-- Sección de Productos -->
         <section class="products-section mt-5">
             <h3 class="text-center mb-4">Nuestros Perfumes</h3>
@@ -85,7 +85,7 @@
                         <button class="active">100 ml</button>
                     </div>
                 </div>
-    
+
                 <!-- Producto 2 -->
                 <div class="col-md-3 product-card">
                     <img src="../assets/img/iroha.jpg" alt="Iroha Nature Serum" class="product-image">
@@ -96,10 +96,11 @@
                         <button>30 ml</button>
                     </div>
                 </div>
-    
+
                 <!-- Producto 3 -->
                 <div class="col-md-3 product-card">
-                    <img src="../assets/img/dolce-gabbana.jpg" alt="Dolce & Gabbana Devotion Male Pour Homme" class="product-image">
+                    <img src="../assets/img/dolce-gabbana.jpg" alt="Dolce & Gabbana Devotion Male Pour Homme"
+                        class="product-image">
                     <h4>Dolce & Gabbana</h4>
                     <p>Devotion Male Pour Homme</p>
                     <p><span class="old-price">135,00€</span> <span class="new-price">84,95€</span></p>
@@ -107,7 +108,7 @@
                         <button>50 ml</button>
                     </div>
                 </div>
-    
+
                 <!-- Producto 4 -->
                 <div class="col-md-3 product-card">
                     <img src="../assets/img/coach-men.jpg" alt="Coach Men" class="product-image">
@@ -118,9 +119,31 @@
                         <button>60 ml</button>
                     </div>
                 </div>
+
+                <!-- Producto 5 (oculto) -->
+                <div class="ocult-product product-card">
+                    <img src="../assets/img/Turckis-fraganse.jpg" alt="Turckis fraganse" class="product-image">
+                    <h4>Turckis fraganse</h4>
+                    <p>Parfum Only Men</p>
+                    <p><span class="old-price">42,00€</span> <span class="new-price">37,99€</span></p>
+                    <div class="size-options">
+                        <button>70 ml</button>
+                    </div>
+                </div>
+
+                <!-- Producto 6 (oculto) -->
+                <div class="ocult-product product-card">
+                    <img src="../assets/img/Turckis-fraganse.jpg" alt="Turckis fraganse" class="product-image">
+                    <h4>Asinic Bombo</h4>
+                    <p>Timber Samba</p>
+                    <p><span class="old-price">60,00€</span> <span class="new-price">52,99€</span></p>
+                    <div class="size-options">
+                        <button>50 ml</button>
+                    </div>
+                </div>
             </div>
         </section>
-    
+
         <!-- Botones de Países -->
         <section id="country-buttons-section" class="mt-5 text-center">
             <h3>Explora por Países</h3>
@@ -130,20 +153,73 @@
             <button class="btn-country" data-country="japon">Japón</button>
             <button class="btn-country" data-country="usa">USA</button>
         </section>
-    </main>
-    
-    
-    
 
-    <br><br><br><br><br><br><br><br>
-    <footer>
+        <section>
+            <section class="country-section" data-country="japon">
+                <h3>Perfumes de Francia</h3>
+                <div class="col-md-3 product-card" data-country="francia">
+                    <img src="../assets/img/Turckis-fraganse.jpg" alt="Turckis fraganse" class="product-image">
+                    <h4>Asinic Bombo</h4>
+                    <p>Timber Samba</p>
+                    <p><span class="old-price">60,00€</span> <span class="new-price">52,99€</span></p>
+                    <div class="size-options">
+                        <button>50 ml</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="country-section" data-country="japon">
+                <h3>Perfumes de Italia</h3>
+                <div class="col-md-3 product-card" data-country="italia">
+                    <img src="../assets/img/Turckis-fraganse.jpg" alt="Turckis fraganse" class="product-image">
+                    <h4>Asinic Bombo</h4>
+                    <p>Timber Samba</p>
+                    <p><span class="old-price">60,00€</span> <span class="new-price">52,99€</span></p>
+                    <div class="size-options">
+                        <button>50 ml</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="country-section" data-country="japon">
+                <h3>Perfumes de Japón</h3>
+                <div class="col-md-3 product-card">
+                    <img src="../assets/img/Turckis-fraganse.jpg" alt="Turckis fraganse" class="product-image">
+                    <h4>Asinic Bombo</h4>
+                    <p>Timber Samba</p>
+                    <p><span class="old-price">60,00€</span> <span class="new-price">52,99€</span></p>
+                    <div class="size-options">
+                        <button>50 ml</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="country-section" data-country="usa">
+                <h3>Perfumes de USA</h3>
+                <div class="col-md-3 product-card">
+                    <img src="../assets/img/Turckis-fraganse.jpg" alt="Turckis fraganse" class="product-image">
+                    <h4>Asinic Bombo</h4>
+                    <p>Timber Samba</p>
+                    <p><span class="old-price">60,00€</span> <span class="new-price">52,99€</span></p>
+                    <div class="size-options">
+                        <button>50 ml</button>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+
+    <br><br>
+    <footer id="footer">
 
         <div class="row">
 
             <div class="col-md-4">
                 <h2>Información Legal</h2>
-                <a href="#">Términos y Condiciones</a>
-                <a href="#">Política de Privacidad</a>
+                <p><a href="#">Términos y Condiciones</a></p>
+                <p><a href="#">Política de Privacidad</a></p>
             </div>
 
             <div class="col-md-4">
@@ -172,6 +248,7 @@
         <div class="row">
 
             <div class="col-12 text-center">
+                <p>___________________________________________________________________</p>
                 <p>Copyright &copy; 2025 Atlas Perfumess - All rights reserved</p>
             </div>
 

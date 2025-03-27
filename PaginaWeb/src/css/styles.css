@@ -9,9 +9,19 @@ body {
     background-attachment: fixed;
 }
 
+.container {
+    background-image: url('../assets/img/atlasfondo.jpeg');
+    box-shadow: 4px 4px 8px #ca0a0a;
+    color: #fff;
+}
+
 header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
+}
+
+h1{
+    color: #333;
 }
 
 .navbar {
@@ -202,9 +212,9 @@ h1 {
 .products-section {   
     overflow: hidden;
     position: relative;
-    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
+    color:#fff;
 }
 
 #carousel {
@@ -251,6 +261,7 @@ h1 {
     box-sizing: border-box;
     flex: 0 0 25%; 
     transition: transform 0.5s ease;
+    color: #333;
 }
 
 .carousel-button {
@@ -306,4 +317,5 @@ h1 {
     margin-top: 20px;
     box-shadow: 1px 0 0 solid rgba(0,0,0,0.1);
     margin: 0 auto; 
+    color: #333;
 }

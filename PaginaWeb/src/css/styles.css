@@ -148,7 +148,7 @@ h1 {
 }
 
 .perfume-button {
-    background-color: #007bff;
+    background-color: #1364b5;
     color: #fff;
 }
 
@@ -183,14 +183,14 @@ h1 {
 
 /* Los botones de país */
 .btn-country {
+    width: 43px;
+    height: 45px;
+    border-radius: 50px;
     margin: 10px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #007bff;
+    background-color: #74889e;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 .btn-country:hover {

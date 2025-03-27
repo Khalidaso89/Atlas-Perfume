@@ -1,5 +1,20 @@
 /*---------------------REGISTRO/INICIO_SESION EDITS-------------------------*/
 
+#logoForm {
+    display:flex;
+    margin: 3%;
+    padding: auto;
+    width: 90px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.titulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 250%;
+    color:#ffffff
+}
+
 /* Estilos para el contenedor del formulario */
 .form-container {
     background-color: #dce0e3;

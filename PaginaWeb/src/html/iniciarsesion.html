@@ -12,47 +12,19 @@
 </head>
 
 <body>
+    <br><br>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="navbar-brand">
-                <a href="../html/perfume.html"><img src="../assets/img/logo.png" id="logo" alt="Logo"></a>
-            </div>
-
-            <!-- Título en móvil -->
-            <h1 class="titulo-movil d-lg-none mx-auto">Atlas Perfume</h1>
-
-            <!-- Botón para colapsar en dispositivos móviles -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- Título y enlaces de navegación -->
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="../html/micesta.html">Mi Cesta</a>
-                    </li>
-                    <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="../html/iniciarsesion.html">Entrar/Registrarse</a>
-                    </li>
-                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="../html/micesta.html">Mi Cesta</a>
-                    </li>
-                    <li class="nav-item d-none d-lg-block"><a class="nav-link"
-                            href="../html/iniciarsesion.html">Entrar/Registrarse</a></li>
-                </ul>
-            </div>
-
-            <!-- Título para escritorio -->
-            <h1 class="d-none d-lg-block">Atlas Perfume</h1>
-
-        </nav>
+        <h1 class="titulo">ATLAS PERFUME</h1>
     </header>
-
     <br>
+
+    
     <div class="form-container">
         <form class="login-form">
-            <h2 class="mb-4">Bienvenido a Atlas Perfume</h2>
+            <div class="d-flex align-items-center justify-content-between" >
+                <a href="../html/perfume.html"class="order-2"><img src="../assets/img/logo.png" id="logoForm" alt="Logo"></a>
+                <h2 class="mb-4 order-1">Bienvenido a Atlas Perfume</h2>
+            </div>
 
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Nombre de usuario" required>
@@ -67,49 +39,7 @@
         </form>
     </div>
 
-    <br><br><br><br>
-    <footer>
-
-        <div class="row">
-
-            <div class="col-md-4">
-                <h2>Información Legal</h2>
-                <a href="#">Términos y Condiciones</a>
-                <a href="#">Política de Privacidad</a>
-            </div>
-
-            <div class="col-md-4">
-                <h2>Contáctanos</h2>
-                <p>Email: <a href="mailto:atlasperfume@gmail.com">atlasperfume@gmail.com</a></p>
-                <p>Teléfono: <a href="tel:+34945884633">945-084-633</a></p>
-            </div>
-
-            <div class="col-md-4">
-                <h2>Redes</h2>
-                <div class="redes-sociales-icons">
-                    <a href="https://www.reddit.com/user/NoCarob8347/" target="_blank">
-                        <img src="#" class="redes" alt="Reddit">
-                    </a>
-                    <a href="https://www.instagram.com/protectbird_/" target="_blank">
-                        <img src="#" class="redes" alt="Instagram">
-                    </a>
-                    <a href="https://x.com/ProtectBird_" target="_blank">
-                        <img src="#" class="redes" alt="Twitter">
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-12 text-center">
-                <p>Copyright &copy; 2025 Atlas Perfumess - All rights reserved</p>
-            </div>
-
-        </div>
-
-    </footer>
+    <br><br>
 
     <!-- Bootstrap JS (jQuery, Popper.js, Bootstrap JS) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -153,29 +153,6 @@ h1 {
 }
 
 /* Sección de Productos */
-.products-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.product-card {
-    text-align: center;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.ocult-product {
-    display: none;
-}
-
-.product-image {
-    width: 100%;
-    max-width: 150px;
-}
-
 .old-price {
     text-decoration: line-through;
 }
@@ -189,10 +166,122 @@ h1 {
     margin-top: 30px;
 }
 
-.btn-country {
-    margin: 10px;
+.country-section {
+    display: none;
+    text-align: center;
+    padding: 50px;
 }
 
+.country-section.active {
+    display: block;
+}
+
+/* Centrar los productos */
+.country-section .product-card {
+    margin: 0 auto;
+}
+
+/* Los botones de país */
+.btn-country {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-country:hover {
+    background-color: #0056b3;
+}
+
+/*---------------------FLECHAS CARRUSEL-------------------------*/
+
+.products-section {   
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-btn {
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.row.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.product-card {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    flex: 0 0 25%; 
+    transition: transform 0.5s ease;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button-left {
+    left: 10px;
+}
+
+.carousel-button-right {
+    right: 10px;
+}
+
+/* Se ocultan los productos extra por defecto */
+.ocult-product {
+    display: none;
+}
+
+/* Para cuando los productos se muestran */
+.show-product {
+    display: block; 
+}
 
 /*---------------------RESPONSIVE EDITS-------------------------*/
 

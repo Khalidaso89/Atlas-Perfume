@@ -74,7 +74,7 @@
         <!-- Sección de Productos -->
         <section class="products-section mt-5">
             <h3 class="text-center mb-4">Nuestros Perfumes</h3>
-            <div class="row">
+            <div class="row" id="carousel">
                 <!-- Producto 1 -->
                 <div class="col-md-3 product-card">
                     <img src="../assets/img/escada.jpg" alt="Escada Bali Paradise" class="product-image">
@@ -85,7 +85,7 @@
                         <button class="active">100 ml</button>
                     </div>
                 </div>
-
+            
                 <!-- Producto 2 -->
                 <div class="col-md-3 product-card">
                     <img src="../assets/img/iroha.jpg" alt="Iroha Nature Serum" class="product-image">
@@ -96,11 +96,10 @@
                         <button>30 ml</button>
                     </div>
                 </div>
-
+            
                 <!-- Producto 3 -->
                 <div class="col-md-3 product-card">
-                    <img src="../assets/img/dolce-gabbana.jpg" alt="Dolce & Gabbana Devotion Male Pour Homme"
-                        class="product-image">
+                    <img src="../assets/img/dolce-gabbana.jpg" alt="Dolce & Gabbana Devotion Male Pour Homme" class="product-image">
                     <h4>Dolce & Gabbana</h4>
                     <p>Devotion Male Pour Homme</p>
                     <p><span class="old-price">135,00€</span> <span class="new-price">84,95€</span></p>
@@ -108,7 +107,7 @@
                         <button>50 ml</button>
                     </div>
                 </div>
-
+            
                 <!-- Producto 4 -->
                 <div class="col-md-3 product-card">
                     <img src="../assets/img/coach-men.jpg" alt="Coach Men" class="product-image">
@@ -119,8 +118,8 @@
                         <button>60 ml</button>
                     </div>
                 </div>
-
-                <!-- Producto 5 (oculto) -->
+            
+                <!-- Producto 5 (oculto inicialmente) -->
                 <div class="ocult-product product-card">
                     <img src="../assets/img/Turckis-fraganse.jpg" alt="Turckis fraganse" class="product-image">
                     <h4>Turckis fraganse</h4>
@@ -130,17 +129,23 @@
                         <button>70 ml</button>
                     </div>
                 </div>
-
-                <!-- Producto 6 (oculto) -->
+            
+                <!-- Producto 6 (oculto inicialmente) -->
                 <div class="ocult-product product-card">
                     <img src="../assets/img/Turckis-fraganse.jpg" alt="Turckis fraganse" class="product-image">
-                    <h4>Asinic Bombo</h4>
-                    <p>Timber Samba</p>
-                    <p><span class="old-price">60,00€</span> <span class="new-price">52,99€</span></p>
+                    <h4>SISI fragance</h4>
+                    <p>Samba dubrasil</p>
+                    <p><span class="old-price">40,00€</span> <span class="new-price">35,99€</span></p>
                     <div class="size-options">
-                        <button>50 ml</button>
+                        <button>55 ml</button>
                     </div>
                 </div>
+            </div>
+            
+            <!-- Flechas de Navegación -->
+            <div class="carousel-nav">
+                <button id="prevBtn" class="carousel-btn">←</button>
+                <button id="nextBtn" class="carousel-btn">→</button>
             </div>
         </section>
 
@@ -154,60 +159,61 @@
             <button class="btn-country" data-country="usa">USA</button>
         </section>
 
-        <section>
-            <section class="country-section" data-country="japon">
-                <h3>Perfumes de Francia</h3>
-                <div class="col-md-3 product-card" data-country="francia">
-                    <img src="../assets/img/Turckis-fraganse.jpg" alt="Turckis fraganse" class="product-image">
-                    <h4>Asinic Bombo</h4>
-                    <p>Timber Samba</p>
-                    <p><span class="old-price">60,00€</span> <span class="new-price">52,99€</span></p>
-                    <div class="size-options">
-                        <button>50 ml</button>
-                    </div>
+        <!-- Sección de perfumes de Francia -->
+        <section class="country-section" data-country="francia">
+            <h3>Perfumes de Francia</h3>
+            <!-- Aquí agregarías los productos de Francia -->
+            <div class="col-md-3 product-card">
+                <img src="../assets/img/Turckis-fraganse.jpg" alt="Perfume Francia" class="product-image">
+                <h4>Perfume Francia</h4>
+                <p>Descripción del perfume</p>
+                <p><span class="old-price">60,00€</span> <span class="new-price">52,99€</span></p>
+                <div class="size-options">
+                    <button>50 ml</button>
                 </div>
-            </section>
-
-            <section class="country-section" data-country="japon">
-                <h3>Perfumes de Italia</h3>
-                <div class="col-md-3 product-card" data-country="italia">
-                    <img src="../assets/img/Turckis-fraganse.jpg" alt="Turckis fraganse" class="product-image">
-                    <h4>Asinic Bombo</h4>
-                    <p>Timber Samba</p>
-                    <p><span class="old-price">60,00€</span> <span class="new-price">52,99€</span></p>
-                    <div class="size-options">
-                        <button>50 ml</button>
-                    </div>
-                </div>
-            </section>
-
-            <section class="country-section" data-country="japon">
-                <h3>Perfumes de Japón</h3>
-                <div class="col-md-3 product-card">
-                    <img src="../assets/img/Turckis-fraganse.jpg" alt="Turckis fraganse" class="product-image">
-                    <h4>Asinic Bombo</h4>
-                    <p>Timber Samba</p>
-                    <p><span class="old-price">60,00€</span> <span class="new-price">52,99€</span></p>
-                    <div class="size-options">
-                        <button>50 ml</button>
-                    </div>
-                </div>
-            </section>
-
-            <section class="country-section" data-country="usa">
-                <h3>Perfumes de USA</h3>
-                <div class="col-md-3 product-card">
-                    <img src="../assets/img/Turckis-fraganse.jpg" alt="Turckis fraganse" class="product-image">
-                    <h4>Asinic Bombo</h4>
-                    <p>Timber Samba</p>
-                    <p><span class="old-price">60,00€</span> <span class="new-price">52,99€</span></p>
-                    <div class="size-options">
-                        <button>50 ml</button>
-                    </div>
-                </div>
-            </section>
-
+            </div>
         </section>
+
+        <!-- Sección de perfumes de Italia -->
+        <section class="country-section" data-country="italia">
+            <h3>Perfumes de Italia</h3>
+            <div class="col-md-3 product-card">
+                <img src="../assets/img/Turckis-fraganse.jpg" alt="Turckis fraganse" class="product-image">
+                <h4>Taliani Pizzini</h4>
+                <p>Only frangansi</p>
+                <p><span class="old-price">40,00€</span> <span class="new-price">39,99€</span></p>
+                <div class="size-options">
+                    <button>70 ml</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="country-section" data-country="japon">
+            <h3>Perfumes de Japón</h3>
+            <div class="col-md-3 product-card">
+                <img src="../assets/img/Turckis-fraganse.jpg" alt="Turckis fraganse" class="product-image">
+                <h4>japanise pirin-kun</h4>
+                <p>uwu fragance</p>
+                <p><span class="old-price">50,00€</span> <span class="new-price">43,99€</span></p>
+                <div class="size-options">
+                    <button>50 ml</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="country-section" data-country="usa">
+            <h3>Perfumes de USA</h3>
+            <div class="col-md-3 product-card">
+                <img src="../assets/img/Turckis-fraganse.jpg" alt="Turckis fraganse" class="product-image">
+                <h4>black police</h4>
+                <p>UA Smpson</p>
+                <p><span class="old-price">65,00€</span> <span class="new-price">55,99€</span></p>
+                <div class="size-options">
+                    <button>60 ml</button>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 

@@ -3,15 +3,18 @@ body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-image: url('../assets/img/atlasfondo.jpeg');
+    background-image: url('../assets/img/atlasfondo3_desenfocado.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
     background-attachment: fixed;
 }
 
-.container {
-    background-image: url('../assets/img/atlasfondo.jpeg');
-    box-shadow: 4px 4px 8px #ca0a0a;
+.perfume-section {
+    background-image: url('../assets/img/atlasfondo3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    box-shadow: 4px solid #030988;
     color: #fff;
 }
 

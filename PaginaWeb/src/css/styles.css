@@ -9,14 +9,7 @@ body {
     background-attachment: fixed;
 }
 
-.perfume-section {
-    background-image: url('../assets/img/atlasfondo3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-    box-shadow: 4px solid #030988;
-    color: #fff;
-}
+
 
 header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -139,12 +132,25 @@ h1 {
 }
 
 /*------------------------- EDITION PRODUCTS -------------------------*/
+
 /* Perfume Section */
 .perfume-section {
-    padding: 50px 20px;
-    background-color: #fff;
+    padding: 20px;
+    background-image: url('../assets/img/atlasfondo3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    color: #fff;
+    max-width: 80%;
+    margin: auto; 
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #bcb9ba;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);    
+    transition: transform 0.3s ease-in-out;
+}
+
+.perfume-section:hover {
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.4);
 }
 
 .perfume-image {
@@ -210,7 +216,7 @@ h1 {
     background-color: #0056b3;
 }
 
-/*---------------------FLECHAS CARRUSEL-------------------------*/
+/*---------------------FLECHAS CARUSEL-------------------------*/
 
 .products-section {   
     overflow: hidden;
@@ -223,6 +229,11 @@ h1 {
 #carousel {
     display: flex;
     overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 .product-image {
@@ -262,9 +273,10 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    flex: 0 0 25%; 
+    flex: 0 0 22%; 
     transition: transform 0.5s ease;
     color: #333;
+    max-width: 22%;
 }
 
 .carousel-button {
@@ -289,13 +301,17 @@ h1 {
 
 /* Se ocultan los productos extra por defecto */
 .ocult-product {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 /* Para cuando los productos se muestran */
 .show-product {
-    display: block; 
+    visibility: visible;
+    opacity: 1;
 }
+
 
 /*---------------------RESPONSIVE EDITS-------------------------*/
 

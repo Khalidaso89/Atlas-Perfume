@@ -9,18 +9,18 @@ document.getElementById('icono-busqueda').onclick = function (i) {
 
 //Botones de paises: aparecer / desaparecer
 document.addEventListener('DOMContentLoaded', () => {
-    const buttons = document.querySelectorAll('.btn-country');
-    let activeSection = null; // Variable para rastrear la sección activa
+    const botones = document.querySelectorAll('.btn-country');
+    let ActivarSeccion = null;
 
-    buttons.forEach(button => {
+    botones.forEach(button => {
         button.addEventListener('click', () => {
             const country = button.dataset.country;
-            const selectedSection = document.querySelector(`.country-section[data-country="${country}"]`);
+            const PaisSeleccionado = document.querySelector(`.country-section[data-country="${country}"]`);
 
             // Si la sección activa es la misma que la seleccionada, la ocultamos
-            if (activeSection === selectedSection) {
-                selectedSection.classList.remove('active');
-                activeSection = null;
+            if (ActivarSeccion === PaisSeleccionado) {
+                PaisSeleccionado.classList.remove('active');
+                ActivarSeccion = null;
             } else {
                 // Ocultar todas las secciones
                 document.querySelectorAll('.country-section').forEach(section => {
@@ -28,14 +28,38 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 // Mostrar la nueva sección
-                selectedSection.classList.add('active');
-                activeSection = selectedSection;
+                PaisSeleccionado.classList.add('active');
+                ActivarSeccion = PaisSeleccionado;
             }
         });
     });
 });
 
 
-
-
 //Flechas carrusel
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.getElementById('carousel');
+    const productos = Array.from(carousel.getElementsByClassName('product-card'));
+    const IzquierdaBtn = document.getElementById('IzquierdaBtn');
+    const DerechaBtn = document.getElementById('DerechaBtn');
+
+    let IndiceActual = 0;
+    const MaxMoves = 2;
+    const productosVisibles = 4; 
+
+    function updateCarousel() {
+        productos.forEach((product, index) => {
+            if (index >= IndiceActual && index < IndiceActual + productosVisibles) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+
+        // Deshabilitar botones si alcanzamos los límites
+        IzquierdaBtn.disabled = IndiceActual === 0;
+        DerechaBtn.disabled = IndiceActual >= MaxMoves;
+    }
+
+});
+

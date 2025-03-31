@@ -150,7 +150,7 @@ h1 {
 }
 
 .perfume-section:hover {
-    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.4);
 }
 
 .perfume-image {
@@ -182,7 +182,7 @@ h1 {
 
 /* Botones de Países */
 #country-buttons-section {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .country-section {
@@ -232,7 +232,6 @@ h1 {
     transition: transform 0.5s ease-in-out;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
     padding: 10px;
 }
 
@@ -244,14 +243,16 @@ h1 {
 .carousel-nav {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .carousel-btn {
-    font-size: 2rem;
+    font-size: 3rem;
     background-color: transparent;
     border: none;
     padding: 10px;
+    position: relative;
+    color: #fff;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -259,7 +260,6 @@ h1 {
 .carousel-btn:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
-
 
 .row.carousel {
     display: flex;
@@ -301,15 +301,12 @@ h1 {
 
 /* Se ocultan los productos extra por defecto */
 .ocult-product {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    display: none;
 }
 
 /* Para cuando los productos se muestran */
 .show-product {
-    visibility: visible;
-    opacity: 1;
+    display: block; 
 }
 
 
@@ -322,6 +319,7 @@ h1 {
         font-size: 1.2em;
         text-align: center;
     }
+
 }
 
 

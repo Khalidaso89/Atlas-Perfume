@@ -10,10 +10,14 @@ h2 {
     font-weight: 300;
 }
 
+#h2 {
+    color: #fff;
+}
+
 /* Tarjetas de productos */
 .card {
     border-radius: 12px;
-    border: 2px solid #212529; 
+    border: 2px solid #212529;
 }
 
 .card h5 {
@@ -51,4 +55,34 @@ h2 {
 .btn-success:hover {
     background-color: #218838;
     box-shadow: 5px 5px 0px #000000;
+}
+
+@media (max-width: 768px) {
+    .container-cesta {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .card h5 {
+        font-size: 1.1rem;
+    }
+
+    .list-group-item {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    #total-precio {
+        font-size: 1.2rem;
+    }
+
+    .btn-success {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
 }

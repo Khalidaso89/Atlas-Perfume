@@ -61,5 +61,21 @@ document.addEventListener('DOMContentLoaded', () => {
         DerechaBtn.disabled = IndiceActual >= MaxMoves;
     }
 
+    IzquierdaBtn.addEventListener('click', () => {
+        if (IndiceActual > 0) {
+            IndiceActual--;
+            updateCarousel();
+        }
+    });
+
+    DerechaBtn.addEventListener('click', () => {
+        if (IndiceActual < MaxMoves) {
+            IndiceActual++;
+            updateCarousel();
+        }
+    });
+
+    // Inicializar el carrusel
+    updateCarousel();
 });
 

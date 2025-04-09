@@ -11,9 +11,7 @@ body {
     margin-top: 80px;  
 }
 
-
 header {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 20px;
     left: 0;

@@ -1,4 +1,87 @@
+/*AJUSTE GENERAL*/
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/img/atlasfondo3_desenfocado.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    padding-top: 20px;
+    margin-top: 80px;  
+}
 
+header {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 20%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+/* Ajustes para el logo */
+#logo {
+    width: 90px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Contenedor principal para logo y búsqueda */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el título */
+h1 {
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Estilos para los enlaces de navegación */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.perfume-section {
+    padding: 20px;
+    background-image: url('../assets/img/atlasfondo3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    color: #fff;
+    max-width: 80%;
+    margin: auto; 
+    border-radius: 10px;
+    border: 3px solid #bcb9ba;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);    
+    transition: transform 0.3s ease-in-out;
+}
 
 .aromas-container {
     width: 100%;
@@ -49,4 +132,62 @@
 .aroma-title {
     width: 100%;
     text-align: center;
+}
+
+
+/*---------------------RESPONSIVE EDITS-------------------------*/
+
+@media (max-width: 768px) {
+
+    /* Título en móvil */
+    .titulo-movil {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+        max-width: 400px;
+        margin: 15px 0;
+        padding: 15px;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .carousel-nav {
+        display: none; /* Oculta las flechas */
+    }
+
+    /* Asegura que los productos 5 y 6 también se muestren */
+    .ocult-product {
+        display: block !important;
+    }
+
+}
+
+/*---------------------FOOTER EDITS-------------------------*/
+
+#footer {
+    width: 100%;   
+    padding: 20px 20px;
+    position: absolute;
+    text-align: center;
+    background-color: #dce0e3;
+    margin-top: 20px;
+    box-shadow: 1px 0 0 solid rgba(0,0,0,0.1);
+    margin: 0 auto; 
+    color: #333;
 }

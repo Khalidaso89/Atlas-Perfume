@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const DerechaBtn = document.getElementById('DerechaBtn');
 
     let IndiceActual = 0;
-    const MaxMoves = 2;
+    const MaxMoves = 1;
     const productosVisibles = 4; 
 
     function updateCarousel() {

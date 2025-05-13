@@ -239,10 +239,21 @@ h1 {
     padding: 10px;
 }
 
+/* Imagen del producto */
 .product-image {
     width: 100%;
-    height: auto;
+    height: 270px;
+    object-fit: contain;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    transition: transform 0.3s ease;
 }
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
 
 .carousel-nav {
     display: flex;

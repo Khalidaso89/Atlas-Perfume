@@ -1,0 +1,104 @@
+/* Estilos generales del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(238, 238, 238);
+    color: #000000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3em 1em;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+/* Estilo para los encabezados h1 */
+h1 {
+    font-size: 2em;
+    color: #111;
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'SILKSCREEN', sans-serif;
+}
+
+/* Estilo para los encabezados h2 */
+h2 {
+    font-family: 'SILKSCREEN', sans-serif;
+    font-size: 1.3em;
+    color: #285741;
+    text-align: left;
+    margin-top: 1.5em;
+    padding-bottom: 0.2em;
+    border-bottom: 0.15em solid rgb(63, 38, 38);
+}
+
+/* Estilo para la fecha de última actualización */
+.last-updated {
+    font-style: italic;
+    color: #666;
+}
+
+/* Estilo para el botón de volver */
+.boton-volver {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: #00a8ff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Efecto hover para el botón de volver */
+.boton-volver:hover {
+    background-color: #0077cc;
+}
+
+/* Contenedor para centrar el botón */
+.button-container {
+    text-align: center;
+}
+
+/* MEDIA para responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    .container {
+        padding: 2em 1em;
+        font-size: 0.95rem;
+    }
+
+    .boton-volver {
+        width: 100%;
+        padding: 1em;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .container {
+        font-size: 0.9rem;
+    }
+}

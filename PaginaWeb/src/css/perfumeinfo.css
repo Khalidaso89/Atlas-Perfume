@@ -3,7 +3,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-image: url('../assets/img/atlasfondo3_desenfocado.jpg');
+    background-image: url('/assets/img/atlasfondo3_desenfocado.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
     background-attachment: fixed;
@@ -70,7 +70,7 @@ h1 {
 
 .perfume-section {
     padding: 20px;
-    background-image: url('../assets/img/atlasfondo3.jpg');
+    background-image: url('/assets/img/atlasfondo3.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
     background-attachment: fixed;

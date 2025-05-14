@@ -3,13 +3,12 @@ body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-image: url('../assets/img/atlasfondo3_desenfocado.jpg');
+    background-image: url('/assets/img/atlasfondo3_desenfocado.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
     background-attachment: fixed;
-    max-width: auto;
+    margin-top: 80px;
     padding-top: 20px;
-    margin-top: 80px;  
 }
 
 header {
@@ -21,6 +20,12 @@ header {
     z-index: 1000;
     border-radius: 20%;
 }
+
+#main {
+    width: 100%;
+    transform: none;
+}
+
 
 .navbar {
     display: flex;
@@ -139,12 +144,12 @@ h1 {
 /* Perfume Section */
 .perfume-section {
     padding: 20px;
-    background-image: url('../assets/img/atlasfondo3.jpg');
+    background-image: url('/assets/img/atlasfondo3.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
     background-attachment: fixed;
     color: #fff;
-    max-width: 80%;
+    max-width: 95%;
     margin: auto; 
     border-radius: 10px;
     border: 3px solid #bcb9ba;

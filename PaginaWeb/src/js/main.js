@@ -79,3 +79,40 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCarousel();
 });
 
+//buscador te lleva a perfume
+document.getElementById('buscarform').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const input = document.getElementById('inputaso').value.trim();
+
+    if (input !== "") {
+        // Convertimos el nombre del perfume en una URL amigable
+        const ruta = normalizarNombre(input);
+        // Verificamos si la ruta exacta existe
+        if (verificarRutaExistente(ruta)) {
+            window.location.href = `/perfumes/${ruta}.html`;
+        } else {
+            alert('Perfume no encontrado');
+            console.log('Ruta no válida:', ruta);
+        }
+    }
+});
+
+function normalizarNombre(nombre) {
+    // Mantenemos el nombre tal cual lo escribe el usuario
+    return nombre
+        .normalize('NFD')          
+        .replace(/[\u0300-\u036f]/g, '')  
+        .replace(/\s+/g, '-')               
+        .replace(/[^a-zA-Z0-9\-]/g, '');   
+}
+
+// Simulación de verificación de ruta
+function verificarRutaExistente(ruta) {
+   
+    // Aquí haces una verificación de las rutas existentes en el servidor
+    const rutasDisponibles = [
+        "BlackPolice", "Perin-kun", "TalianiPizzini", "Dolce&Gabbana", "FraganceEiffel", "EscadaParadise", "PerfumSalam", "IrohaNature"
+    ];
+    return rutasDisponibles.includes(ruta);
+}

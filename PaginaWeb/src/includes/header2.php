@@ -7,14 +7,14 @@
     <title>PROYECTO2</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<header>
+        <nav style="border-radius: 20px; background-color: #dce0e3f2;" class="navbar navbar-expand-lg navbar-light ">
             <div class="navbar-brand">
-                <a href="#"><img src="../assets/img/logo.png" id="logo" alt="Logo"></a>
+                <a href="/html/perfume.html"><img src="/assets/img/logo.png" id="logo" alt="Logo"></a>
             </div>
 
             <!-- Título en móvil -->
@@ -30,15 +30,15 @@
                 <!-- Título y enlaces de navegación -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="../html/micesta.html">Mi Cesta</a>
+                        <a class="nav-link" href="/html/micesta.html">Mi Cesta</a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="../html/iniciarsesion.html">Entrar/Registrarse</a>
+                        <a class="nav-link" href="/html/iniciarsesion.html">Entrar/Registrarse</a>
                     </li>
-                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="../html/micesta.html">Mi Cesta</a>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="/html/micesta.html">Mi Cesta</a>
                     </li>
                     <li class="nav-item d-none d-lg-block"><a class="nav-link"
-                            href="../html/iniciarsesion.html">Entrar/Registrarse</a></li>
+                            href="/html/iniciarsesion.html">Entrar/Registrarse</a></li>
                 </ul>
             </div>
 
